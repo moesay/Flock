@@ -91,6 +91,7 @@
   In Flock, the comparison is part of the process. The input file will always be decrypted. But it will only work if your password is correct. And this is the cost of the if-less code.
   
 - ### Thats enough.
-  Too much to read so i will stop, but i wanna say two last things:
-    * I'm not a security engineer and i've never claimed to be an expert. Im just a guy who know about assembely and how things work. So i wrote this code.
+  Too much to read so i will stop, but i wanna say three last things:
+    * I'm not a security engineer and i've never claimed to be an expert. Im just a guy who knows about assembly and how things work. So i wrote this code.
     * If somebody, somehow, managed to break the code, please let me know.
+    * I wrote this code 6 years ago. I was still using ```C++03``` and ```std::thread``` wasn't there, yet. I've used ```p_thread``` and thats why the function parameters are void pointers. Even after compiling it with ```C++17``` compiler and changing to ```std::thread```, Im too lazy to change the parameters. Maybe later i will. 
