@@ -86,7 +86,7 @@ int main(int argc, char *argv[]){
     {
         std::cout << "Target file : " << file.src;
         std::cout << "\nFile size : " << (double)getSize(file.src)/1048576 <<  " MB";
-        std::cout << "\nLinHash is encrypting your file, please wait...\n\n";
+        std::cout << "\Flock is encrypting your file, please wait...\n\n";
 
         std::thread enc (encrypt, (void*) &file);
         enc.join();
@@ -108,7 +108,7 @@ int main(int argc, char *argv[]){
     {
         std::cout << "Target file : " << file.src;
         std::cout << "\nFile size : " << (double)getSize(file.src)/1048576 <<  " MB";
-        std::cout << "\nLinHash is decrypting your file, please wait...\n\n";
+        std::cout << "\Flock is decrypting your file, please wait...\n\n";
 
         std::thread dec (decrypt, (void*) &file);
         dec.join();
